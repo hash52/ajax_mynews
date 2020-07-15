@@ -1,11 +1,16 @@
 # ajax_mynews課題
 
-１，下記のコードを記述
+１，下記のコードを全部記述
+
 ２，`npm run watch`を実行
+
 ３，サーバーを起動して/apiviewにアクセス
+
 ４，表示されたchange colorボタンやadd helloボタンが効くか試す
+
 ５，/apiviewに書いてある課題に取り組む
 
+----
 
 ↓【既存のファイルに追記】↓
 routes/web.php
@@ -35,8 +40,6 @@ app.js
 require('./bootstrap');
 require('./ajax_practice.js'); //この行を追記
 ```
-
-↑【既存のファイルに追記】↑
 
 ----
 
@@ -163,4 +166,3 @@ class NewsController extends Controller
     }    
 }
 ```
-↑【新たにファイルを作成】↑
