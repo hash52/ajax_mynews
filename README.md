@@ -19,7 +19,7 @@ routes/web.php
 Route::get('/apiview', 'NewsController@apiview');
 ```
 
-routes/api.php
+/routes/api.php
 ```
 //URLが/apiから始まる
 //csrf保護無効=外部からアクセスできる
@@ -28,7 +28,7 @@ Route::group(['middleware' => ['api']], function(){
 });
 ```
 
-app/Http/Controllers/NewsController.php
+/app/Http/Controllers/NewsController.php
 ```
 public function apiview()
 {
@@ -36,7 +36,7 @@ public function apiview()
 }    
 ```
 
-app.js
+/resources/js/app.js
 ```
 require('./bootstrap');
 require('./ajax_practice.js'); //この行を追記
@@ -46,7 +46,7 @@ require('./ajax_practice.js'); //この行を追記
 
 ↓【新たにファイルを作成】↓
 
-resources/views/news/apiview.blade.php
+/resources/views/news/apiview.blade.php
 ```
 <!doctype html>
  <html lang="{{ app()->getLocale() }}">
@@ -90,7 +90,7 @@ resources/views/news/apiview.blade.php
  </html>
  ```
 
-resources/js/ajax_practice.js
+/resources/js/ajax_practice.js
 ```
 $(function() {
      //ボタンを押すと色が変わる
@@ -142,7 +142,7 @@ $(function() {
  }
  ```
 
-app/Http/Controllers/Api/NewsController.php
+/app/Http/Controllers/Api/NewsController.php
 ```
 <?php
 
