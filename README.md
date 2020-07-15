@@ -13,6 +13,7 @@
 ----
 
 ↓【既存のファイルに追記】↓
+
 routes/web.php
 ```
 Route::get('/apiview', 'NewsController@apiview');
@@ -44,6 +45,7 @@ require('./ajax_practice.js'); //この行を追記
 ----
 
 ↓【新たにファイルを作成】↓
+
 resources/views/news/apiview.blade.php
 ```
 <!doctype html>
